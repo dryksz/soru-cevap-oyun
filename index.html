@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<title>Bi Soru Bi Cevap</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+   
+
+    <div id="container"> 
+        <div id="start">
+            <p>KURALLAR</p>
+                <p>1.20 sn. süreniz var süreniz 2sn de bir artacaktır.<br>
+                
+                <p>2.Puanınız süre sonunda % ile hesaplanacaktır<br>
+              
+                <p>3.Toplamda 8 sorunuz var <br>
+              <p> "BAŞARININ AÇAMAYACAĞI KAPI YOKTUR.."</p><br>
+                <hq>---------------*OYUNA BAŞLA*---------------</h1></div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div><button onclick="play()">>></button>
+                <button onclick="pause()">||</button></div>
+            </div>
+            
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+            
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+        
+    </div>
+    
+
+     <script src="quiz.js"></script>
+      
+   
+</body>
+</html>
